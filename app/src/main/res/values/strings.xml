@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">API</string>
+    <string name="user_id">userId</string>
+    <string name="id">id</string>
+    <string name="title">title</string>
+    <string name="body">body</string>
+</resources>
