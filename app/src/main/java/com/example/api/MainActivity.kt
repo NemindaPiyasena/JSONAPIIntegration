@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         recyclerView = findViewById(R.id.recycleView)
-        val weatherAPI = RetrofitClient.JSONAPI
-        weatherAPI?.JSONAPIAt?.enqueue(object : Callback<List<JSONPlaceHolderData?>?> {
+        val jsonPlaceHolder = RetrofitClient.JSONAPI
+        jsonPlaceHolder?.JSONAPIAt?.enqueue(object : Callback<List<JSONPlaceHolderData?>?> {
 
             override fun onResponse(call: Call<List<JSONPlaceHolderData?>?>, response: Response<List<JSONPlaceHolderData?>?>) {
                 val body = response.body()
